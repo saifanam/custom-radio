@@ -4,7 +4,7 @@ Custom and Dependent Radio components
 
 ### Key points ###
 
-* The main Yes / No and the dependent value ranges are the same ImagedRadioButtons component.
+* The main Yes / No and the dependent value ranges are the same Radio component.
 * They are made to look different through custom styles. Check it out in style.css.
 
 ### Functionality ###
