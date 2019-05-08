@@ -1,0 +1,63 @@
+@import 'styleguide';
+.CustomRadioWrap {
+    .QuestionText {
+        font-size: $small;
+        padding-left: 0.25em;
+        color: $grey60;
+        margin: 0.8em 0 0.5em 0;
+    }
+    .Radio {
+        width: 105px;
+        height: 3.8em;
+        margin: 0.5em 1em 0 0;
+        .radio-option {
+            transition: unset;
+            &:hover {
+                border: 1px solid $primary;
+            }
+        }
+        .right {
+            .RadioItem {
+                font-size: $intermediateSmall;
+                color: $lightBlack;
+                font-weight: $regular;
+                text-transform: none;
+            }
+        }
+    }
+    .DependentOptions {
+        margin-bottom: 1.5em;
+        .Radio {
+            width: auto;
+            height: 2.15em;
+            margin: 0.5em 0.8em 0.3em 0;
+            padding-bottom: 0;
+            .radio-option {
+                padding: 0.8em;
+                background-color: $grey20;
+                border-radius: 4px;
+                transition: unset;
+            }
+            .left {
+                display: none;
+            }
+            .right {
+                width: 100%;
+                .Radio-Item {
+                    margin-left: 0;
+                }
+            }
+            &.active,
+            &:hover {
+                .radio-option {
+                    background-color: $secondary;
+                }
+                .right {
+                    .RadioItem {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
